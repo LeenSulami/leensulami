@@ -1,0 +1,129 @@
+/* Main Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+/* body */
+body {
+  background-image: radial-gradient(
+    circle,
+    #000000,
+    #100f10,
+    #1b191a,
+    #242224,
+    #2d2b2e
+  );
+}
+/* Navbar */
+.navbar-toggler {
+  border: none !important;
+}
+.navbar-toggler:hover {
+  border: none !important;
+}
+.navbar-toggler:active {
+  border: none !important;
+}
+
+.nav-link {
+  color: white !important;
+  margin: 1rem;
+  font-size: x-large;
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: #00b49c !important;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-link::after {
+  color: #00b49c;
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00b49c;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  color: #00b49c !important;
+}
+
+/* Home */
+
+.home__container {
+  position: relative;
+  height: 100%;
+  align-items: center;
+  color: #fff;
+}
+
+.home__social {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+}
+
+.home__social-follow {
+  font-weight: lighter;
+  position: relative;
+}
+
+.home__social-follow::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 2px;
+  background-color: #00b49c;
+  right: -45%;
+  top: 50%;
+}
+
+.home__social-links {
+  display: inline-flex;
+  column-gap: 1.08rem;
+  transition: 0.4s;
+}
+.home__social-link {
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
+}
+.home__social-link:hover {
+  transform: translateY(0.25rem);
+  color: #fff;
+}
+
+.box {
+  box-shadow: 0px 10px 20px 5px rgba(70, 70, 70, 0.5);
+  transform: translateY(-1px);
+  border-radius: 88% 12% 79% 21% / 19% 81% 19% 81% !important;
+  transition: transform 0.25s ease-out;
+}
+
+.info__item {
+  display: flex;
+  align-items: center;
+}
+
+.info__title,
+.info__subtitle {
+  font-size: small;
+}
+
+.info__title {
+  font-size: medium;
+}
+.info__icon {
+  font-size: 1.8rem;
+  color: #00b49c;
+  margin-right: 1rem;
+}
