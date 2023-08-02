@@ -23,10 +23,12 @@ body {
 .navbar-toggler:active {
   border: none !important;
 }
+.home__social-follow {
+  margin-right: 3rem;
+}
 
 .nav-link {
   color: white !important;
-  margin: 1rem;
   font-size: x-large;
   position: relative;
   display: inline-block;
