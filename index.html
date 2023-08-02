@@ -21,15 +21,24 @@
       crossorigin="anonymous"
     ></script>
     <!-- <<iconscout>> -->
+    <script
+      src="https://kit.fontawesome.com/bda79c08fb.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
+
+    <!-- jquery -->
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <title>LeenAlsulami</title>
   </head>
   <body class="bg-dark">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-transparent">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <div class="d-flex justify-content-center">
           <a
@@ -56,29 +65,31 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link fs-4" aria-current="page" href="#home">Home</a>
+              <a class="nav-link fs-4 mx-2" aria-current="page" href="#home"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-4" href="#about">About Me</a>
+              <a class="nav-link fs-4 mx-2" href="#about">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-4" href="#">Skills</a>
+              <a class="nav-link fs-4 mx-2" href="#">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-4" href="#">Projects</a>
+              <a class="nav-link fs-4 mx-2" href="#">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-4" href="#">Education</a>
+              <a class="nav-link fs-4 mx-2" href="#">Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-4" href="#">Experience</a>
+              <a class="nav-link fs-4 mx-2" href="#">Experience</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- HOME -->
-    <div class="container home__container" id="home">
+    <div class="container home__container d-block" id="home">
       <div class="row">
         <div class="col-8 home__social justify-content-end">
           <div class="d-flex justify-content-end">
@@ -122,12 +133,13 @@
           <h1 class="home__title display-6">Hello, I'm Leen Alsulami</h1>
           <h3 class="home__subtitle lead">Software Developer</h3>
           <p class="home__description lead">
-            I'm a software developer who creates efficient and high-quality
-            software solutions using industry-standard tools and programming
-            languages. I stay up-to-date with the latest technologies to ensure
-            that my work is innovative and meets my clients' needs.
+            I recently graduated with a degree in information technology and I'm
+            passionate about software development. I have experience working on
+            projects using industry-standard tools and programming languages.
+            I'm always eager to learn new technologies and keep up-to-date with
+            the latest trends in the field.
           </p>
-          <a href="#about" class="btn btn-primary">
+          <a href="#about" class="btn">
             <i class="uil uil-user-square"></i>
             More About Me
           </a>
@@ -135,14 +147,14 @@
             <div class="my__info row justify-content-center">
               <div class="col-md-6 info__item">
                 <i class="uil uil-envelope-minus info__icon"></i>
-                <div class="my-2">
+                <div class="my-3">
                   <h3 class="info__title">Email</h3>
                   <span class="info__subtitle">Leen_saleh24@hotmail.com</span>
                 </div>
               </div>
-              <div class="col-md-6 info__item">
-                <i class="uil uil-whatsapp info__icon"></i>
-                <div class="my-2">
+              <div class="col-md-6">
+                <i class="uil uil-whatsapp info__icon fs-4"></i>
+                <div class="my-3">
                   <h3 class="info__title">Whatsapp</h3>
                   <span class="info__subtitle">+966569211631</span>
                 </div>
@@ -152,10 +164,50 @@
         </div>
       </div>
       <!-- About -->
-      <div class="container" id="about">
-        <div class="row">
-          <div class="col">
-            <h1 class="home__title display-6 text-bg-dark">About</h1>
+      <div class="container mx-5" id="about">
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6">
+            <h2 data-heading="Intro" class="section_title text-center">
+              About Me
+            </h2>
+            <div class="about_container container grid">
+              <div class="about__data">
+                <h3 class="about__heading my-3">
+                  Hi, I'm Leen Alsulami based in Jeddah, KSA
+                </h3>
+                <p class="about__description">
+                  Software Developer proficient in web and mobile application
+                  technologies, with a strong background in software engineering
+                  principles.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="row justify-content-center">
+                <div class="col-md-4">
+                  <div class="about__box text-center">
+                    <i class="about__icon fa-solid fa-award"></i>
+                    <h3 class="about__title">Experience</h3>
+                    <span class="about__subtitle">2+ years</span>
+                  </div>
+                </div>
+                <!-- <div class="col-md-3">
+                  <div class="about__box text-center">
+                    <i class="about__icon fa-solid fa-graduation-cap"></i>
+                    <h3 class="about__title">Major</h3>
+                    <span class="about__subtitle">Information Technology</span>
+                  </div>
+                </div> -->
+                <div class="col-md-4">
+                  <div class="about__box text-center">
+                    <i class="about__icon fa-sharp fa-solid fa-briefcase"></i>
+                    <h3 class="about__title">Completed</h3>
+                    <span class="about__subtitle">+10 Projects</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
