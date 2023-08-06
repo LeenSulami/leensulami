@@ -5,14 +5,7 @@
 /* body */
 body {
   padding: 10rem 0 0 0;
-  background-image: radial-gradient(
-    circle,
-    #000000,
-    #100f10,
-    #1b191a,
-    #242224,
-    #2d2b2e
-  );
+  background-image: radial-gradient(#000000, #100f10, #1b191a, #242224);
 }
 .content-based-scroll {
   opacity: 0;
@@ -69,7 +62,6 @@ body {
 }
 .navbar {
   background-image: radial-gradient(
-    circle,
     #000000,
     #100f10,
     #1b191a,
@@ -177,4 +169,16 @@ body {
 
 .about__description {
   font-size: small;
+}
+
+/* Projects */
+.project__tech-stack {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project__image {
+  box-shadow: 0 4px 4px rgba(253, 253, 253, 0.219) !important;
 }
