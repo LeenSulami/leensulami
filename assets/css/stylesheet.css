@@ -4,7 +4,7 @@
 
 /* body */
 body {
-  padding: 13rem 0 0 0;
+  padding: 10rem 0 0 0;
   background-image: radial-gradient(
     circle,
     #000000,
@@ -137,10 +137,6 @@ body {
 .btn {
   background-color: #00b49c !important;
 }
-.info__item {
-  align-items: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-}
 
 .info__title,
 .info__subtitle {
@@ -153,7 +149,6 @@ body {
 .info__icon {
   font-size: 2rem;
   color: #00b49c;
-  margin-right: 1rem;
 }
 
 /* About me */
@@ -161,6 +156,7 @@ body {
   content: attr(data-heading);
   display: block;
   color: #00b49c;
+  font-size: 1.5rem;
 }
 .about__box {
   text-align: center;
